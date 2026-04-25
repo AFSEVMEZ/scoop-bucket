@@ -1,0 +1,31 @@
+{
+  "version": "0.4.3",
+  "description": "AsIndie game distribution CLI",
+  "homepage": "https://asindie.com",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://releases.asindie.com/cli/0.4.3/asindie-windows-x64.exe",
+      "hash": "cd15b661e2dde7d6b2ad8ceee5548704d28c71646c228909593e61db698679ee"
+    }
+  },
+  "bin": "asindie.exe",
+  "checkver": {
+    "url": "https://releases.asindie.com/cli/latest.json",
+    "jsonpath": "$.version"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://releases.asindie.com/cli/$version/asindie-windows-x64.exe"
+      }
+    },
+    "hash": {
+      "url": "https://releases.asindie.com/cli/$version/manifest.json",
+      "jsonpath": "$.assets.\"windows-x64\".sha256"
+    }
+  },
+  "pre_install": [
+    "Rename-Item \"$dir\\asindie-windows-x64.exe\" \"asindie.exe\""
+  ]
+}
