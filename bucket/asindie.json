@@ -1,12 +1,12 @@
 {
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "AsIndie game distribution CLI",
   "homepage": "https://asindie.com",
   "license": "Apache-2.0",
   "architecture": {
     "64bit": {
-      "url": "https://releases.asindie.com/cli/0.4.3/asindie-windows-x64.exe",
-      "hash": "cd15b661e2dde7d6b2ad8ceee5548704d28c71646c228909593e61db698679ee"
+      "url": "https://releases.asindie.com/cli/0.4.4/asindie-windows-x64.exe",
+      "hash": "6f2f36dfea4671ebfda221efd198a1f534120ef4fee8c82bf0009dd0d9990d2c"
     }
   },
   "bin": "asindie.exe",
